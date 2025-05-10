@@ -12,20 +12,16 @@ const scene = new T.Scene();
 const params = {
     width: innerWidth,
     height: innerHeight,
-    count: 5000,
+    count: 50000,
     size: 0.01,
     radius: 5,
-    branches: 3,
-    spin: -0.15,
-    randomness: 0,
-    randomnessPower: 1,
+    branches: 4,
+    spin: -0.65,
+    randomness: 0.3,
+    randomnessPower: 3.5,
     insideColor: '#ff6030',
     outsideColor: '#1b3984'
 };
-
-// INFO: global helpers
-const axesHelper = new T.AxesHelper();
-scene.add(axesHelper);
 
 // INFO: Galaxy
 let geometry: T.BufferGeometry | null = null;
